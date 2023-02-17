@@ -4,6 +4,7 @@ import GetPostContent from '../Api/GetPost';
 
 function SinglePost() {
     let { slug } = useParams();
+    console.log("param test", slug)
     return (
 
         <GetPostContent slug={slug} />

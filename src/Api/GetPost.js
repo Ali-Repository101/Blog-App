@@ -4,8 +4,6 @@ import { LOAD_POST_CONTENT } from "./Query"
 
 
 function GetPostContent(props) {
-
-    console.log(props.slug)
     const { loading, error, data } = useQuery(LOAD_POST_CONTENT(props.slug));
 
     if (loading) return <p>Loading...</p>;
